@@ -1,21 +1,9 @@
-# React + TypeScript + Vite
+A couple of things to note:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
-
-## Deploy Your Own
-
-Deploy your own Vite project with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite-react&template=vite-react)
-
-_Live Example: https://vite-react-example.vercel.app_
-
-### Deploying From Your Terminal
-
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+1. I use TypeScript for the component to match Autarc’s infrastructure.
+2. I use absolutely minimal css, my focus was on the component logic instead.
+3. Users are able to delete only the comments made by themselves, they can’t remove comments made by other team members. Users can however freely comment and reply to each others’ comments. The behavior is similar to how Slack works.
+4. Only single nesting is possible, a reply can’t have another reply - similar to Slack as well
+5. For the persistency I use browser’s local storage, this can also be replaced with any kind of local database or native ios solution
+6. I added way too many comments just explain my thought process behind each decision. I figured it’s better if I comment too much than not enough.
+# comment-app
